@@ -1,15 +1,16 @@
 {
-    "recommendations": [
-        "ms-python.mypy-type-checker",
-        "ms-python.black-formatter",
-        "ms-python.vscode-pylance",
-        "ms-python.flake8",
-        "ms-python.isort",
-        "ms-python.python",
-        "ms-python.debugpy",
-        "tamasfe.even-better-toml",
-        "njpwerner.autodocstring",
-        "zeshuaro.vscode-python-poetry",
-        "redhat.vscode-yaml"
-    ]
+	"recommendations": [
+		"ms-python.mypy-type-checker",
+		"ms-python.black-formatter",
+		"ms-python.vscode-pylance",
+		"ms-python.flake8",
+		"ms-python.isort",
+		"ms-python.python",
+		"ms-python.debugpy",
+		"tamasfe.even-better-toml",
+		"njpwerner.autodocstring",
+		"zeshuaro.vscode-python-poetry",
+		"redhat.vscode-yaml",
+		"dsznajder.es7-react-js-snippets"
+	]
 }

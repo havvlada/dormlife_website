@@ -1,27 +1,19 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:poetry",
-    "python-envs.defaultPackageManager": "ms-python.python:poetry",
-    "python-envs.pythonProjects": [ ],
-    "[toml]": {
-        "editor.defaultFormatter": "tamasfe.even-better-toml"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "json.format.keepLines": true,
-    "isort.args": [
-        "--settings-path=./pyproject.toml"
-    ],
-    "black-formatter.args": [
-        "--config=./pyproject.toml"
-    ],
-    "mypy-type-checker.args": [
-        "--config-file=./pyproject.toml"
-    ],
-    "flake8.args": [
-        "--toml-config=./pyproject.toml"
-    ]
+	"python-envs.defaultEnvManager": "ms-python.python:poetry",
+	"python-envs.defaultPackageManager": "ms-python.python:poetry",
+	"python-envs.pythonProjects": [ ],
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"json.format.keepLines": true,
+	"isort.args": [ "--settings-path=./pyproject.toml" ],
+	"black-formatter.args": [ "--config=./pyproject.toml" ],
+	"mypy-type-checker.args": [ "--config-file=./pyproject.toml" ],
+	"flake8.args": [ "--toml-config=./pyproject.toml" ]
 }

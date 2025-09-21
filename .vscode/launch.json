@@ -1,16 +1,20 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Django Backend",
-            "type": "debugpy",
-            "request": "launch",
-            "args": [
-                "runserver"
-            ],
-            "django": true,
-            "autoStartBrowser": false,
-            "program": "${workspaceFolder}/src/backend/manage.py"
-        }
-    ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"command": "cd ${workspaceFolder}/src/frontend && npm run dev",
+			"name": "React Frontend",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"name": "Django Backend",
+			"type": "debugpy",
+			"request": "launch",
+			"args": [ "runserver" ],
+			"django": true,
+			"autoStartBrowser": false,
+			"program": "${workspaceFolder}/src/backend/manage.py"
+		}
+	]
 }
