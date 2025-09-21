@@ -26,3 +26,59 @@ pre-commit = "^4.3.0"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+# For configuration options see: https://github.com/PyCQA/flake8
+ignore = [
+    # Indentation — black handles
+    "E1",
+    "W1",
+    # Whitespace — black handles
+    "E2",
+    "W2",
+    # Blank lines — black handles
+    "E3",
+    "W3",
+    # Imports — isort handles
+    "E4",
+    "W4",
+    # Line length — black handles
+    "E5",
+    "W5",
+    # No lambdas — too strict
+    "E731",
+]
+max-line-length = 120
+
+[tool.isort]
+# For configuration options see: https://github.com/PyCQA/isort
+profile = "black"
+line_length = 120
+
+[tool.black]
+# For configuration options see: https://github.com/psf/black/tree/main
+line-length = 120
+
+[tool.shellcheck]
+# For configuration options see: https://github.com/shellcheck-py/shellcheck-py
+
+[tool.mypy]
+# For configuration options see: https://mypy.readthedocs.io/en/stable/config_file.html
+exclude = ['\.venv', '\.git', '__pycache__']
+mypy_path = '$MYPY_CONFIG_FILE_DIR/src/backend'
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_return_any = true
+show_error_codes = true
+allow_redefinition = true
+warn_unused_ignores = true
+show_error_context = true
+warn_redundant_casts = true
+namespace_packages = true
+explicit_package_bases = true
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "showcard_website_api.settings"

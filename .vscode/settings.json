@@ -11,5 +11,17 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "json.format.keepLines": true
+    "json.format.keepLines": true,
+    "isort.args": [
+        "--settings-path=./pyproject.toml"
+    ],
+    "black-formatter.args": [
+        "--config=./pyproject.toml"
+    ],
+    "mypy-type-checker.args": [
+        "--config-file=./pyproject.toml"
+    ],
+    "flake8.args": [
+        "--toml-config=./pyproject.toml"
+    ]
 }
